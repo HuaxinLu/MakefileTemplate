@@ -25,7 +25,7 @@ $(shell mkdir -p $(LIB_DIR))
 export BIN_DIR=$(BUILD_ROOT)
 # 需要依赖的第三方库文件存放目录，需预先指定
 export EXT_LIB_DIR=$(LIB_DIR)/ext_lib
-# 源文件目录
+# 源文件目录，需要注意，指定生成bin的源文件目录需要放在最后
 export BUILD_DIR=$(BUILD_ROOT)/lcd/ \
 		  $(BUILD_ROOT)/usb/ \
 		  $(BUILD_ROOT)/media/ \
