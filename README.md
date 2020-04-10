@@ -22,3 +22,14 @@
 
 ### common.mk
 抽取的Makefile公共文件，实现自动化编译。
+
+## 示例工程说明
+简单的mp3工程示例，用于测试Makefile的各种功能。
+app：main文件所在目录，在这个目录中指定链接成bin文件。
+inc：所有头文件所在目录。
+lcd：编译成普通目标文件并链接。
+math：编译成dll并链接。
+media：编译成静态库并链接。
+usb：含有多个头文件，测试修改头文件后Makefile是否重新执行。
+lib：生成的库文件。
+lib/ext_lib/：依赖的第三方库文件，gif和rmvb，其生成在ext_lib_gen中。
